@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>B6A88076-DA62-4424-964C-69CB091829E1</string>
+	<key>IDESourceControlProjectName</key>
+	<string>windowsEstimator</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>5E90DF1A83153F8AC2111ADECBF022091AB25949</key>
+		<string>https://github.com/SoeLTun/CMPE180-95.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>windowsEstimator/windowsEstimator.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>5E90DF1A83153F8AC2111ADECBF022091AB25949</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/SoeLTun/CMPE180-95.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>5E90DF1A83153F8AC2111ADECBF022091AB25949</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>5E90DF1A83153F8AC2111ADECBF022091AB25949</string>
+			<key>IDESourceControlWCCName</key>
+			<string>CMPE180-95</string>
+		</dict>
+	</array>
+</dict>
+</plist>
