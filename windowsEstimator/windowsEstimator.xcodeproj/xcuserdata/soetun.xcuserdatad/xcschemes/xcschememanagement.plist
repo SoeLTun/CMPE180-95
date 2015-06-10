@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>firstdemo.xcscheme</key>
+		<key>windowsEstimator.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,12 +12,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>1157BC851B27696F00F15C6A</key>
+		<key>11969E4C1B279D1800BCD81C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>1157BC9E1B27696F00F15C6A</key>
+		<key>11969E611B279D1800BCD81C</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1157BC851B27696F00F15C6A"
-               BuildableName = "firstdemo.app"
-               BlueprintName = "firstdemo"
-               ReferencedContainer = "container:firstdemo.xcodeproj">
+               BlueprintIdentifier = "11969E4C1B279D1800BCD81C"
+               BuildableName = "windowsEstimator.app"
+               BlueprintName = "windowsEstimator"
+               ReferencedContainer = "container:windowsEstimator.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -28,10 +28,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1157BC9E1B27696F00F15C6A"
-               BuildableName = "firstdemoTests.xctest"
-               BlueprintName = "firstdemoTests"
-               ReferencedContainer = "container:firstdemo.xcodeproj">
+               BlueprintIdentifier = "11969E611B279D1800BCD81C"
+               BuildableName = "windowsEstimatorTests.xctest"
+               BlueprintName = "windowsEstimatorTests"
+               ReferencedContainer = "container:windowsEstimator.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,20 +46,20 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1157BC9E1B27696F00F15C6A"
-               BuildableName = "firstdemoTests.xctest"
-               BlueprintName = "firstdemoTests"
-               ReferencedContainer = "container:firstdemo.xcodeproj">
+               BlueprintIdentifier = "11969E611B279D1800BCD81C"
+               BuildableName = "windowsEstimatorTests.xctest"
+               BlueprintName = "windowsEstimatorTests"
+               ReferencedContainer = "container:windowsEstimator.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1157BC851B27696F00F15C6A"
-            BuildableName = "firstdemo.app"
-            BlueprintName = "firstdemo"
-            ReferencedContainer = "container:firstdemo.xcodeproj">
+            BlueprintIdentifier = "11969E4C1B279D1800BCD81C"
+            BuildableName = "windowsEstimator.app"
+            BlueprintName = "windowsEstimator"
+            ReferencedContainer = "container:windowsEstimator.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -76,10 +76,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1157BC851B27696F00F15C6A"
-            BuildableName = "firstdemo.app"
-            BlueprintName = "firstdemo"
-            ReferencedContainer = "container:firstdemo.xcodeproj">
+            BlueprintIdentifier = "11969E4C1B279D1800BCD81C"
+            BuildableName = "windowsEstimator.app"
+            BlueprintName = "windowsEstimator"
+            ReferencedContainer = "container:windowsEstimator.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,10 +95,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1157BC851B27696F00F15C6A"
-            BuildableName = "firstdemo.app"
-            BlueprintName = "firstdemo"
-            ReferencedContainer = "container:firstdemo.xcodeproj">
+            BlueprintIdentifier = "11969E4C1B279D1800BCD81C"
+            BuildableName = "windowsEstimator.app"
+            BlueprintName = "windowsEstimator"
+            ReferencedContainer = "container:windowsEstimator.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

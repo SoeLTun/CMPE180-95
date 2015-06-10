@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  firstdemo
+//  windowsEstimator
 //
 //  Created by Soe Tun on 6/9/15.
-//  Copyright (c) 2015 Soe Tun. All rights reserved.
+//  Copyright (c) 2015 CMPE180-95. All rights reserved.
 //
 
 import UIKit
