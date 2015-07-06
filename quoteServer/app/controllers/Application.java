@@ -1,33 +1,22 @@
 package controllers;
 
+import play.*;
+import play.api.libs.json.JsPath;
+import play.mvc.*;
+import views.html.*;
+import play.data.*;
+import play.Logger;
 
-import models.Bar;
-import org.springframework.beans.factory.annotation.Autowired;
-import play.data.Form;
-import play.libs.Json;
-import play.mvc.Result;
-import services.BarService;
-import views.html.index;
+public class Application extends Controller{
 
-@org.springframework.stereotype.Controller
-public class Application {
+  public static Result index(){
+    return ok("Welcome To EzQuote");
+}
 
-    @Autowired
-    private BarService barService;
+public static Result uploadPicture(){
+  return ok("Picture uploaded.");
+}
 
-    public Result index() {
-        return play.mvc.Controller.ok(index.render(Form.form(Bar.class)));
-    }
-
-    public Result addBar() {
-        Form<Bar> form = Form.form(Bar.class).bindFromRequest();
-        Bar bar = form.get();
-        barService.addBar(bar);
-        return play.mvc.Controller.redirect(controllers.routes.Application.index());
-    }
-
-    public Result listBars() {
-        return play.mvc.Controller.ok(Json.toJson(barService.getAllBars()));
-    }
-    
+public static Result returnQuote(){
+  return ok("Quote returned");
 }
