@@ -1,5 +1,6 @@
 package models;
 
+import java.math.*;
 import play.data.validation.Constraints;
 import play.data.*;
 import scala.Option;
@@ -14,26 +15,23 @@ import javax.persistence.*;
 import play.db.ebean.*;
 import play.data.format.*;
 import play.data.validation.*;
-import play.db.ebean.Model.Finder;
+import com.avaje.ebean.Model.Finder;
 import play.Logger;
-
+import com.avaje.ebean.Model;
 
 
 @Entity
-public class Window  extends Model{
+public class QuoteModel  extends Model{
 
   @Id
   public long id;
+  public long user_Id;
 
-  @Lob
-  public byte[] windowImage;
+  @Version
+  public java.util.Date version; //timestamp
 
-  public String manufacturer_Name;
-  public String style;
-  public int length;
-  public int width;
-  public String color;
-  public String cost;
+  @Column(precision = 38, scale = 2) // Constrains BigDecimal to 38 integers and 2 decimal places.
+  public BigDecimal cost;
 
 
 

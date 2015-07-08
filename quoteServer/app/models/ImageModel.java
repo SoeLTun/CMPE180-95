@@ -1,5 +1,6 @@
 package models;
 
+import com.avaje.ebean.Model;
 import play.data.validation.Constraints;
 import play.data.*;
 import scala.Option;
@@ -14,11 +15,11 @@ import javax.persistence.*;
 import play.db.ebean.*;
 import play.data.format.*;
 import play.data.validation.*;
-import play.db.ebean.Model.Finder;
+import com.avaje.ebean.Model.Finder;
 import play.Logger;
 
 @Entity
-public class Image  extends Model{
+public class ImageModel  extends Model{
 
   @Id
   public long id;

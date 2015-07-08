@@ -9,15 +9,15 @@ import play.Logger;
 
 public class Application extends Controller{
 
-public static Result index(){
+public Result index(){
     return ok("Welcome To EzQuote");
 }
 
-  public static Result uploadPicture(){
+  public Result uploadPicture(){
     return ok("Picture uploaded.");
   }
 
-  public static Result returnQuote(){
+  public Result returnQuote(){
     return ok("Quote returned");
   }
 }

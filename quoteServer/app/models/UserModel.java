@@ -14,8 +14,10 @@ import javax.persistence.*;
 import play.db.ebean.*;
 import play.data.format.*;
 import play.data.validation.*;
-import play.db.ebean.Model.Finder;
+import com.avaje.ebean.Model.Finder;
 import play.Logger;
+import com.avaje.ebean.Model;
+
 
 
 
