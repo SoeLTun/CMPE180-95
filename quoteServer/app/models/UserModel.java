@@ -2,11 +2,7 @@ package models;
 
 import play.data.validation.Constraints;
 import play.data.*;
-import securesocial.core.java.SecureSocial;
 import scala.Option;
-import securesocial.core.Identity;
-import securesocial.core.IdentityId;
-import securesocial.core.java.BaseUserService;
 import java.sql.Connection;
 import java.sql.Statement;
 import java.util.*;
@@ -39,8 +35,6 @@ public class UserModel  extends Model{
   //@Constraints.Required
   public String password;
 
-  @Lob
-  public byte[] profilePicture;
 
 
   public static Finder<Long,UserModel> find = new Finder<Long,UserModel>(

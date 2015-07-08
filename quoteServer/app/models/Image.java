@@ -17,24 +17,17 @@ import play.data.validation.*;
 import play.db.ebean.Model.Finder;
 import play.Logger;
 
-
-
 @Entity
-public class Window  extends Model{
+public class Image  extends Model{
 
   @Id
   public long id;
 
+  @Version
+  public java.util.Date version;
+
   @Lob
-  public byte[] windowImage;
-
-  public String manufacturer_Name;
-  public String style;
-  public int length;
-  public int width;
-  public String color;
-  public String cost;
-
+  public byte[] userUploadedImage;
 
 
 }

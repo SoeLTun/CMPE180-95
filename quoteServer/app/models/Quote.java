@@ -1,5 +1,6 @@
 package models;
 
+import java.math.*;
 import play.data.validation.Constraints;
 import play.data.*;
 import scala.Option;
@@ -17,23 +18,18 @@ import play.data.validation.*;
 import play.db.ebean.Model.Finder;
 import play.Logger;
 
-
-
 @Entity
-public class Window  extends Model{
+public class Quote  extends Model{
 
   @Id
   public long id;
+  public long user_Id;
 
-  @Lob
-  public byte[] windowImage;
+  @Version
+  public java.util.Date version; //timestamp
 
-  public String manufacturer_Name;
-  public String style;
-  public int length;
-  public int width;
-  public String color;
-  public String cost;
+  @Column(precision = 38, scale = 2) // Constrains BigDecimal to 38 integers and 2 decimal places.
+  public BigDecimal cost;
 
 
 
