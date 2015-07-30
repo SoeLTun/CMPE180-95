@@ -31,12 +31,24 @@ public class WindowModel  extends Model{
   public byte[] windowImage;
 
   public String manufacturer_Name;
+  public String series;
   public String style;
   public int length;
   public int width;
   public String color;
   public String cost;
+  public String frame_type;
+  public String grid_style;
+  public String grid_type;
+  public boolean tempered;
+  public String glass_type;
 
+  public void saveImage(){
+
+  }
+
+  public static Finder<Long,WindowModel> find = new Finder<Long,WindowModel>(
+  Long.class, WindowModel.class);
 
 
 }

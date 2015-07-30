@@ -1,7 +1,16 @@
-@(message: String)
+@(user: Form[WindowModel])
 
-@main("Welcome to Play") {
+@import helper._
+@main("EzQuote") {
 
-    @play20.welcome(message, style = "Java")
-
+  @helper.form(action = routes.Application.uploadPicture, 'enctype -> "multipart/form-data"){
+  <div class='row'>
+  <div class='col-xs-3'></div>
+  <div class='col-xs-6'>
+    <h2>EzQuote Window Upload</h2>
+      @helper.inputFile(user("windowImage"), 'class -> "form-control", '_label -> "Upload/Change your profile image" )
+  </div>
+  <div class='col-xs-3'></div>
+</div>
+  }
 }

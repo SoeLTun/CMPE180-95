@@ -31,11 +31,16 @@ create table window_model (
   id                        bigserial not null,
   window_image              bytea,
   manufacturer_name         varchar(255),
+  series                    varchar(255),
   style                     varchar(255),
   length                    integer,
   width                     integer,
   color                     varchar(255),
   cost                      varchar(255),
+  frame_type                varchar(255),
+  grid_style                varchar(255),
+  grid_type                 varchar(255),
+  tempered                  boolean,
   constraint pk_window_model primary key (id))
 ;
 
