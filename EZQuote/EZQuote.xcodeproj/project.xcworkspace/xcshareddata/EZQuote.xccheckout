@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>C1E94188-56D6-49CF-A2BD-DCA8B4CFC0BB</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>EZQuote</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>5E90DF1A83153F8AC2111ADECBF022091AB25949</key>
 		<string>https://github.com/SoeLTun/CMPE180-95.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>EZQuote/EZQuote.xcodeproj/project.xcworkspace</string>
+	<string>EZQuote/EZQuote.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>5E90DF1A83153F8AC2111ADECBF022091AB25949</key>
