@@ -11,7 +11,8 @@ import UIKit
 class MenuViewController: UIViewController {
 
     
-    
+    @IBOutlet weak var l1: UILabel!
+    var data:String!
     
     
     
@@ -19,7 +20,7 @@ class MenuViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+            l1.text = data
         // Do any additional setup after loading the view.
     }
 

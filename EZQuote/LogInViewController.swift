@@ -28,7 +28,7 @@ class LogInViewController: UIViewController {
         {
             println("Both Missing")
             let alertBox = UIAlertController(title: "Warning!", message: "Email and password is missing", preferredStyle: UIAlertControllerStyle.Alert)
-            let dismissButton = UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Cancel){ (libSelected) -> Void in }
+            let dismissButton = UIAlertAction(title: "OK", style: UIAlertActionStyle.Cancel){ (libSelected) -> Void in }
             alertBox.addAction(dismissButton)
             self.presentViewController(alertBox, animated: true, completion: nil)
             
@@ -39,7 +39,7 @@ class LogInViewController: UIViewController {
         {
             println("Email Missing")
             let alertBox = UIAlertController(title: "Warning!", message: "Email  is missing", preferredStyle: UIAlertControllerStyle.Alert)
-            let dismissButton = UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Cancel){ (libSelected) -> Void in }
+            let dismissButton = UIAlertAction(title: "OK", style: UIAlertActionStyle.Cancel){ (libSelected) -> Void in }
             alertBox.addAction(dismissButton)
             self.presentViewController(alertBox, animated: true, completion: nil)
             
@@ -50,7 +50,7 @@ class LogInViewController: UIViewController {
         {
             println("Passeword Missing")
             let alertBox = UIAlertController(title: "Warning!", message: "Password  is missing", preferredStyle: UIAlertControllerStyle.Alert)
-            let dismissButton = UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Cancel){ (libSelected) -> Void in }
+            let dismissButton = UIAlertAction(title: "OK", style: UIAlertActionStyle.Cancel){ (libSelected) -> Void in }
             alertBox.addAction(dismissButton)
             self.presentViewController(alertBox, animated: true, completion: nil)
             
@@ -62,14 +62,14 @@ class LogInViewController: UIViewController {
             println("Valid")
 
             let menuVC2 = self.storyboard!.instantiateViewControllerWithIdentifier("Menu") as!MenuViewController
-            
+            menuVC2.data = loginEmail.text
             self.navigationController?.pushViewController(menuVC2, animated: true)
         }
         else
         {
             println("Email or Passeword is not correct")
             let alertBox = UIAlertController(title: "Warning!", message: "Email or Password is not Valid", preferredStyle: UIAlertControllerStyle.Alert)
-            let dismissButton = UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Cancel){ (libSelected) -> Void in }
+            let dismissButton = UIAlertAction(title: "OK", style: UIAlertActionStyle.Cancel){ (libSelected) -> Void in }
             alertBox.addAction(dismissButton)
             self.presentViewController(alertBox, animated: true, completion: nil)
             

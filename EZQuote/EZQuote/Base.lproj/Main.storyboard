@@ -38,35 +38,51 @@
                                 <rect key="frame" x="13" y="102" width="294" height="49"/>
                                 <color key="backgroundColor" red="0.23529413339999999" green="0.66666668650000005" blue="0.91372555489999996" alpha="1" colorSpace="deviceRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
-                                <state key="normal" title="Get Estimate Price ">
+                                <state key="normal" title="Get Estimate Quote ">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="GTA-TO-9Cq" kind="show" id="po6-h3-O4f"/>
+                                    <segue destination="GTA-TO-9Cq" kind="show" identifier="toGetQuote" id="po6-h3-O4f"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="I wan to show something" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5zk-3F-nI2">
+                                <rect key="frame" x="64" y="199" width="192" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="6DV-2q-Bxv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="SPJ-MR-779" firstAttribute="leading" secondItem="TEm-Lx-h0B" secondAttribute="leadingMargin" constant="19" id="5Un-J0-kuN"/>
+                            <constraint firstItem="5zk-3F-nI2" firstAttribute="centerX" secondItem="1VO-Mr-oou" secondAttribute="centerX" id="7R6-gp-EmA"/>
                             <constraint firstItem="sUC-Kr-zN9" firstAttribute="leading" secondItem="TEm-Lx-h0B" secondAttribute="leadingMargin" constant="-6" id="DMx-Yk-dFL"/>
                             <constraint firstItem="SPJ-MR-779" firstAttribute="top" secondItem="610-T1-hCe" secondAttribute="bottom" constant="8" symbolic="YES" id="IUe-VP-Jl0"/>
                             <constraint firstItem="1VO-Mr-oou" firstAttribute="leading" secondItem="TEm-Lx-h0B" secondAttribute="leadingMargin" id="Wfx-dO-Qjk"/>
+                            <constraint firstItem="5zk-3F-nI2" firstAttribute="centerX" secondItem="sUC-Kr-zN9" secondAttribute="centerX" id="Wgi-Vr-tbz"/>
                             <constraint firstItem="47r-JX-v0E" firstAttribute="top" secondItem="1VO-Mr-oou" secondAttribute="bottom" constant="415" id="Xfm-eV-LpV"/>
                             <constraint firstItem="1VO-Mr-oou" firstAttribute="top" secondItem="sUC-Kr-zN9" secondAttribute="bottom" constant="18" id="Yqf-32-tY6"/>
                             <constraint firstItem="1VO-Mr-oou" firstAttribute="trailing" secondItem="sUC-Kr-zN9" secondAttribute="trailing" id="ZMk-Nx-5pe"/>
                             <constraint firstItem="SPJ-MR-779" firstAttribute="centerX" secondItem="sUC-Kr-zN9" secondAttribute="centerX" id="fwV-hg-MBE"/>
                             <constraint firstItem="SPJ-MR-779" firstAttribute="centerX" secondItem="TEm-Lx-h0B" secondAttribute="centerX" id="g1O-ah-EMI"/>
+                            <constraint firstItem="47r-JX-v0E" firstAttribute="top" secondItem="5zk-3F-nI2" secondAttribute="bottom" constant="325" id="hIP-VG-zIK"/>
                             <constraint firstItem="sUC-Kr-zN9" firstAttribute="top" secondItem="610-T1-hCe" secondAttribute="bottom" constant="40" id="q64-vS-IUM"/>
+                            <constraint firstItem="5zk-3F-nI2" firstAttribute="top" secondItem="1VO-Mr-oou" secondAttribute="bottom" constant="48" id="qF7-qh-M96"/>
                             <constraint firstItem="1VO-Mr-oou" firstAttribute="top" secondItem="SPJ-MR-779" secondAttribute="bottom" constant="42" id="r9z-lA-XZV"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="l1" destination="5zk-3F-nI2" id="uyV-J2-YJA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2ds-Ha-GUE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-409" y="-1014"/>
+            <point key="canvasLocation" x="548" y="-1694"/>
         </scene>
         <!--Get Quote View Controller-->
         <scene sceneID="iE5-9i-4s9">
@@ -116,7 +132,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="Get Quick Quote">
+                                <state key="normal" title="Quick Estimate">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -128,7 +144,7 @@
                                 <rect key="frame" x="13" y="450" width="294" height="40"/>
                                 <color key="backgroundColor" red="0.23529413339999999" green="0.66666668650000005" blue="0.91372555489999996" alpha="1" colorSpace="deviceRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
-                                <state key="normal" title="Advance Options">
+                                <state key="normal" title="Detail Estimate">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -166,7 +182,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bVW-Dm-lTL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-35" y="-1014"/>
+            <point key="canvasLocation" x="-507" y="-1017"/>
         </scene>
         <!--Log In View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -293,7 +309,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="12" y="-1639"/>
+            <point key="canvasLocation" x="-161" y="-1689"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="Ywk-CS-nSe">
@@ -458,15 +474,15 @@ XX[AWN],PA/ASN -etc</string>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="s4Z-MS-u93" id="wNY-Es-xl7">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="mLL-th-9m0">
-                                                    <rect key="frame" x="263" y="8" width="51" height="31"/>
-                                                </switch>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TEsting Cell" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dMe-vS-a17">
-                                                    <rect key="frame" x="13" y="8" width="235" height="31.5"/>
+                                                    <rect key="frame" x="13" y="8" width="235" height="32"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="mLL-th-9m0">
+                                                    <rect key="frame" x="263" y="8" width="51" height="31"/>
+                                                </switch>
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -972,7 +988,7 @@ XX[AWN],PA/ASN -etc</string>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OZg-iw-7x0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="335" y="-291"/>
+            <point key="canvasLocation" x="363" y="-303"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="CyH-6I-IFm">
@@ -1357,7 +1373,7 @@ XX[AWN],PA/ASN -etc</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iId-fj-aAV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="335" y="-922"/>
+            <point key="canvasLocation" x="-97" y="-1017"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="c3n-hs-BrJ">
@@ -1379,6 +1395,9 @@ XX[AWN],PA/ASN -etc</string>
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="registerSignUpBtn:" destination="aVy-YM-7he" eventType="touchUpInside" id="R62-BI-OSX"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirm Password:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="syt-Sh-sDs">
                                 <rect key="frame" x="16" y="285" width="288" height="50"/>
@@ -1389,11 +1408,6 @@ XX[AWN],PA/ASN -etc</string>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="confirm" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="GJR-4e-rFq">
-                                <rect key="frame" x="16" y="322" width="288" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                            </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mX9-JY-fir">
                                 <rect key="frame" x="16" y="220" width="288" height="40"/>
                                 <constraints>
@@ -1442,6 +1456,11 @@ XX[AWN],PA/ASN -etc</string>
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="confirm" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="GJR-4e-rFq">
+                                <rect key="frame" x="16" y="322" width="288" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -1473,10 +1492,15 @@ XX[AWN],PA/ASN -etc</string>
                             <constraint firstItem="mX9-JY-fir" firstAttribute="trailing" secondItem="99m-Kq-gJP" secondAttribute="trailing" id="znM-P9-ADc"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="registerConfirmPassword" destination="GJR-4e-rFq" id="r1w-Eb-NUc"/>
+                        <outlet property="registerEmail" destination="nag-So-lPW" id="QOK-gf-QKS"/>
+                        <outlet property="registerPassword" destination="99m-Kq-gJP" id="h6I-Ki-js3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bry-hb-1iX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="439" y="-1639"/>
+            <point key="canvasLocation" x="189" y="-1689"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="3Dg-tS-u6k">
@@ -1495,7 +1519,7 @@ XX[AWN],PA/ASN -etc</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RZb-l5-a5Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-388" y="-1683"/>
+            <point key="canvasLocation" x="-507" y="-1733"/>
         </scene>
     </scenes>
     <resources>
