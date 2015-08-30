@@ -63,6 +63,9 @@ class GetQuoteViewController: UIViewController,UINavigationControllerDelegate, U
 
     
     
+    @IBAction func requestQuickQuote(sender: UIButton) {
+        
+    }
     
     
     override func viewDidLoad() {

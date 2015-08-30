@@ -10,7 +10,6 @@
 		116431941B6D9C3C001CB871 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116431931B6D9C3C001CB871 /* LogInViewController.swift */; };
 		116431961B6DB8DA001CB871 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116431951B6DB8DA001CB871 /* MenuViewController.swift */; };
 		116431981B6DD106001CB871 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116431971B6DD106001CB871 /* RegisterViewController.swift */; };
-		1164319C1B6DD3AC001CB871 /* Boccardo_Gate_(San_José_State_University)_-_DSC03952.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 1164319B1B6DD3AC001CB871 /* Boccardo_Gate_(San_José_State_University)_-_DSC03952.JPG */; };
 		1164319E1B6DE0B4001CB871 /* GetQuoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1164319D1B6DE0B4001CB871 /* GetQuoteViewController.swift */; };
 		11A8480B1B28CB19008AF7AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A8480A1B28CB19008AF7AB /* AppDelegate.swift */; };
 		11A848101B28CB19008AF7AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11A8480E1B28CB19008AF7AB /* Main.storyboard */; };
@@ -33,7 +32,6 @@
 		116431931B6D9C3C001CB871 /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LogInViewController.swift; path = ../LogInViewController.swift; sourceTree = "<group>"; };
 		116431951B6DB8DA001CB871 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		116431971B6DD106001CB871 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
-		1164319B1B6DD3AC001CB871 /* Boccardo_Gate_(San_José_State_University)_-_DSC03952.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Boccardo_Gate_(San_José_State_University)_-_DSC03952.JPG"; path = "../../../../../Desktop/Boccardo_Gate_(San_José_State_University)_-_DSC03952.JPG"; sourceTree = "<group>"; };
 		1164319D1B6DE0B4001CB871 /* GetQuoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetQuoteViewController.swift; sourceTree = "<group>"; };
 		11A848051B28CB19008AF7AB /* EZQuote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EZQuote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11A848091B28CB19008AF7AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -89,7 +87,6 @@
 				116431971B6DD106001CB871 /* RegisterViewController.swift */,
 				116431951B6DB8DA001CB871 /* MenuViewController.swift */,
 				1164319D1B6DE0B4001CB871 /* GetQuoteViewController.swift */,
-				1164319B1B6DD3AC001CB871 /* Boccardo_Gate_(San_José_State_University)_-_DSC03952.JPG */,
 				11A8480E1B28CB19008AF7AB /* Main.storyboard */,
 				11A848081B28CB19008AF7AB /* Supporting Files */,
 			);
@@ -205,7 +202,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				11A848101B28CB19008AF7AB /* Main.storyboard in Resources */,
-				1164319C1B6DD3AC001CB871 /* Boccardo_Gate_(San_José_State_University)_-_DSC03952.JPG in Resources */,
 				11A848151B28CB19008AF7AB /* LaunchScreen.xib in Resources */,
 				11A848121B28CB19008AF7AB /* Images.xcassets in Resources */,
 			);
