@@ -5,7 +5,11 @@
 
 create table image_model (
   id                        bigserial not null,
+  user_id                   bigint,
   user_uploaded_image       bytea,
+  processed_image           bytea,
+  ready_for_grabcut         boolean,
+  ready_for_measurement     boolean,
   version                   timestamp not null,
   constraint pk_image_model primary key (id))
 ;
@@ -41,6 +45,7 @@ create table window_model (
   grid_style                varchar(255),
   grid_type                 varchar(255),
   tempered                  boolean,
+  glass_type                varchar(255),
   constraint pk_window_model primary key (id))
 ;
 

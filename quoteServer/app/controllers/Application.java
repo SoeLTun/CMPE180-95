@@ -7,6 +7,13 @@ import play.mvc.*;
 import views.html.*;
 import play.data.*;
 import play.Logger;
+import play.mvc.Http.*;
+import java.io.File;
+import java.io.*;
+import java.util.*;
+import play.libs.Json;
+import com.fasterxml.jackson.databind.JsonNode;
+import javax.imageio.*;
 
 public class Application extends Controller{
 
@@ -27,8 +34,8 @@ public Result uploadPicture(){
           String fileName = picture.getFilename();
           String contentType = picture.getContentType();
           File file = picture.getFile();
-          window.windowImage = com.google.common.io.Files.toByteArray(file);
-          window.save();
+          windowData.windowImage = com.google.common.io.Files.toByteArray(file);
+          windowData.save();
           Logger.debug("Image captured!");
         } else {
           Logger.debug("Unable to capture image.");
@@ -42,11 +49,39 @@ public Result uploadPicture(){
 
 
 public Result requestImages(int numRequested){
-
-    ImageModel.getImages(numRequested);
-
-    return ok("Image Sent");
+  Logger.debug("Num Requested: " + numRequested);
+  JsonNode images = Json.toJson(ImageModel.getImages(numRequested));
+  if(images != null){
+      return ok(images);
+    }else{
+      return ok("No images to return");
+    }
   }
+
+  public Result requestImageFile(int numRequested){
+    Logger.debug("Num Requested: " + numRequested);
+    JsonNode images = Json.toJson(ImageModel.getImages(numRequested));
+    ImageModel[] imageItems = new ImageModel[20];
+    int x = 0;
+
+    for (JsonNode item : images) { //Loads results from api call to JsonNode. Stores in FeedItem
+										imageItems[x] = new ImageModel();
+										imageItems[x].userUploadedImage = item.get("userUploadedImage").textValue();
+										imageItems[x].id = item.get("id").textValue();
+                    imageItems[x].userId = item.get("userId").textValue();
+
+                    x++;
+										//Logger.debug(item.get("pubDate").textValue());
+										}
+
+    //File file = ImageIO.read(new ByteArrayInputStream());
+
+    if(images != null){
+        return ok(images);
+      }else{
+        return ok("No images to return");
+      }
+    }
 
 public Result returnQuote(){
     return ok("Quote returned");

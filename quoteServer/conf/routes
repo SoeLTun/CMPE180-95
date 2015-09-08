@@ -5,11 +5,12 @@
 # Application Controller
 GET     /                           controllers.Application.index()
 GET     /picture                    controllers.Application.uploadPicture()
-GET     /requestImages              controllers.Application.requestImages(numRequested: int)
+GET     /requestImages              controllers.Application.requestImages(numRequested: Integer)
+GET     /requestImageFile              controllers.Application.requestImageFile(numRequested: Integer)
 
 
 #User Controller
-POST    /userUploadedImage          controllers.UserController.userUploadedImage()
+POST    /userImageUpload          controllers.UserController.userImageUpload()
 POST    /newUser                    controllers.UserController.newUser(email: String, password: String)
 
 # Quote Controller

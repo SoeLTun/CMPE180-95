@@ -21,6 +21,8 @@ import com.avaje.ebean.Model;
 
 
 
+
+
 @Entity
 public class UserModel  extends Model{
 
@@ -37,6 +39,23 @@ public class UserModel  extends Model{
   //@Constraints.Required
   public String password;
 
+  public static UserModel loadUserModel(String email){
+    //this.id = user.id;
+    Logger.debug("Find : email");
+    UserModel newUserModel = UserModel.find.where().eq("email", email).findUnique();
+
+    return newUserModel;
+  }
+
+  public static UserModel loadUserById(Long id){
+    UserModel newUserModel = UserModel.find.where().eq("id", id).findUnique();
+    return newUserModel;
+  }
+
+  public static List<UserModel> findByName(String name){
+    List<UserModel> newUserModel = find.where().ilike("userName", "%" + name + "%").findList();
+    return newUserModel;
+  }
 
 
   public static Finder<Long,UserModel> find = new Finder<Long,UserModel>(

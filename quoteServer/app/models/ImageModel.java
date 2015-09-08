@@ -17,6 +17,7 @@ import play.data.format.*;
 import play.data.validation.*;
 import com.avaje.ebean.Model.Finder;
 import play.Logger;
+import play.mvc.Http.*;
 
 @Entity
 public class ImageModel  extends Model{
@@ -39,11 +40,11 @@ public class ImageModel  extends Model{
   public boolean readyForMeasurement;
 
   public static List<ImageModel> getImages(int teamNumber){
-    if(teamnumber == 1){
-      return list = find.where().eq("readForGrabcut", true).findList();
+    if(teamNumber == 1){
+      return find.where().eq("readyForGrabcut", true).findList();
 
     }else if(teamNumber == 2){
-      return list = find.where().eq("readForMeasurement", true).findList();
+      return find.where().eq("readyForMeasurement", true).findList();
     }else{
       return null;
     }
@@ -51,23 +52,19 @@ public class ImageModel  extends Model{
   }
 
 
-  public static UserModel loadUserModel(String email){
+  public static ImageModel loadImageModel(String email){
     //this.id = user.id;
     Logger.debug("Find : email");
-    UserModel newUserModel = ImageModel.find.where().eq("email", email).findUnique();
+    ImageModel newUserModel = ImageModel.find.where().eq("email", email).findUnique();
 
     return newUserModel;
   }
 
-  public static UserModel loadUserById(Long id){
-    UserModel newUserModel = UserModel.find.where().eq("id", id).findUnique();
-    return newUserModel;
+  public static ImageModel loadImageById(Long id){
+    ImageModel newImageModel = ImageModel.find.where().eq("id", id).findUnique();
+    return newImageModel;
   }
 
-  public static List<UserModel> findByName(String name){
-    List<UserModel> newUserModel = find.where().ilike("userName", "%" + name + "%").findList();
-    return newUserModel;
-  }
 
   public static Finder<Long, ImageModel> find = new Finder<Long, ImageModel>(
   Long.class, ImageModel.class);
