@@ -29,8 +29,8 @@ class RegisterViewController: UIViewController {
         // check all three fields
     if registerEmail.text == "" && registerPassword.text == "" && registerConfirmPassword.text == ""
     {
-        println("all three are missing")
-        let alertbox = UIAlertController(title: "Warning!", message: "Input fields are empty", preferredStyle: UIAlertControllerStyle.Alert)
+        print("all three are missing")
+        let alertbox = UIAlertController(title: "Alert!", message: "Input fields are empty", preferredStyle: UIAlertControllerStyle.Alert)
         let dismissBtn = UIAlertAction(title: "OK", style: UIAlertActionStyle.Cancel){(libSelected) -> Void in
         }
         alertbox.addAction(dismissBtn)
@@ -39,8 +39,8 @@ class RegisterViewController: UIViewController {
         // check email
         else if registerEmail.text == ""
     {
-        println("Email is misssing")
-        let alertbox = UIAlertController(title: "Warning!", message: "Email is missing", preferredStyle: UIAlertControllerStyle.Alert)
+        print("Email is misssing")
+        let alertbox = UIAlertController(title: "Alert!", message: "Email is missing", preferredStyle: UIAlertControllerStyle.Alert)
         let dismissBtn = UIAlertAction(title: "OK", style: UIAlertActionStyle.Cancel){(libSelected) -> Void in
         }
         alertbox.addAction(dismissBtn)
@@ -50,8 +50,8 @@ class RegisterViewController: UIViewController {
         // check password
         else if  registerPassword.text == ""
     {
-        println("Password is missing")
-        let alertbox = UIAlertController(title: "Warning!", message: "Password is missing", preferredStyle: UIAlertControllerStyle.Alert)
+        print("Password is missing")
+        let alertbox = UIAlertController(title: "Alert!", message: "Password is missing", preferredStyle: UIAlertControllerStyle.Alert)
         let dismissBtn = UIAlertAction(title: "OK", style: UIAlertActionStyle.Cancel){(libSelected) -> Void in
         }
         alertbox.addAction(dismissBtn)
@@ -62,8 +62,8 @@ class RegisterViewController: UIViewController {
         else if registerConfirmPassword == ""
     {
         
-        println("Confirm is missing")
-        let alertbox = UIAlertController(title: "Warning!", message: "Confirm password is missing", preferredStyle: UIAlertControllerStyle.Alert)
+        print("Confirm is missing")
+        let alertbox = UIAlertController(title: "Alert!", message: "Confirm password is missing", preferredStyle: UIAlertControllerStyle.Alert)
         let dismissBtn = UIAlertAction(title: "OK", style: UIAlertActionStyle.Cancel){(libSelected) -> Void in
         }
         alertbox.addAction(dismissBtn)
@@ -82,10 +82,10 @@ class RegisterViewController: UIViewController {
         
         
             // show error message
-            if !isValidateEmail(email)
+            if !isValidateEmail(email!)
             {
                 
-                println("Invalid")
+                print("Invalid")
                 let alertbox = UIAlertController(title: "Warning!", message: "Email address is not valid", preferredStyle: UIAlertControllerStyle.Alert)
                 let dismissBtn = UIAlertAction(title: "OK", style: UIAlertActionStyle.Cancel){(libSelected) -> Void in}
                 
@@ -97,7 +97,7 @@ class RegisterViewController: UIViewController {
             // check both passwords are equal or not
             else if password != confirmpassword
             {
-                println("Password and confirm password are not equal")
+                print("Password and confirm password are not equal")
                 let alertbox = UIAlertController(title: "Warning!", message: "Password and confirm password do not match", preferredStyle: UIAlertControllerStyle.Alert)
                 let dismissBtn = UIAlertAction(title: "OK", style: UIAlertActionStyle.Cancel){(libSelected) -> Void in}
                 
@@ -108,7 +108,7 @@ class RegisterViewController: UIViewController {
             //  register begin
             else
             {
-                println("Registering")
+                print("Registering")
                 let alertbox = UIAlertController(title: "Confirm!", message: "Successfully Register", preferredStyle: UIAlertControllerStyle.Alert)
                 let dismissBtn = UIAlertAction(title: "OK", style: UIAlertActionStyle.Cancel){(libSelected) -> Void in}
                 

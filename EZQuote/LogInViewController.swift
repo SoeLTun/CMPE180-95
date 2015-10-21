@@ -26,8 +26,8 @@ class LogInViewController: UIViewController {
         //check both email and password
         if loginEmail.text == "" && loginPassword.text == ""
         {
-            println("Both Missing")
-            let alertBox = UIAlertController(title: "Warning!", message: "Email and password is missing", preferredStyle: UIAlertControllerStyle.Alert)
+            print("Both Missing")
+            let alertBox = UIAlertController(title: "Alert!", message: "Email and password is missing", preferredStyle: UIAlertControllerStyle.Alert)
             let dismissButton = UIAlertAction(title: "OK", style: UIAlertActionStyle.Cancel){ (libSelected) -> Void in }
             alertBox.addAction(dismissButton)
             self.presentViewController(alertBox, animated: true, completion: nil)
@@ -37,8 +37,8 @@ class LogInViewController: UIViewController {
         // check for email
         else if loginEmail.text == ""
         {
-            println("Email Missing")
-            let alertBox = UIAlertController(title: "Warning!", message: "Email  is missing", preferredStyle: UIAlertControllerStyle.Alert)
+            print("Email Missing")
+            let alertBox = UIAlertController(title: "Alert!", message: "Email  is missing", preferredStyle: UIAlertControllerStyle.Alert)
             let dismissButton = UIAlertAction(title: "OK", style: UIAlertActionStyle.Cancel){ (libSelected) -> Void in }
             alertBox.addAction(dismissButton)
             self.presentViewController(alertBox, animated: true, completion: nil)
@@ -48,8 +48,8 @@ class LogInViewController: UIViewController {
         // check for password
         else if loginPassword.text == ""
         {
-            println("Passeword Missing")
-            let alertBox = UIAlertController(title: "Warning!", message: "Password  is missing", preferredStyle: UIAlertControllerStyle.Alert)
+            print("Passeword Missing")
+            let alertBox = UIAlertController(title: "Alert!", message: "Password  is missing", preferredStyle: UIAlertControllerStyle.Alert)
             let dismissButton = UIAlertAction(title: "OK", style: UIAlertActionStyle.Cancel){ (libSelected) -> Void in }
             alertBox.addAction(dismissButton)
             self.presentViewController(alertBox, animated: true, completion: nil)
@@ -59,7 +59,7 @@ class LogInViewController: UIViewController {
         // validate email and password
         else if loginEmail.text == "a" && loginPassword.text == "a"
         {
-            println("Valid")
+            print("Valid")
 
             let menuVC2 = self.storyboard!.instantiateViewControllerWithIdentifier("Menu") as!MenuViewController
             menuVC2.data = loginEmail.text
@@ -67,8 +67,8 @@ class LogInViewController: UIViewController {
         }
         else
         {
-            println("Email or Passeword is not correct")
-            let alertBox = UIAlertController(title: "Warning!", message: "Email or Password is not Valid", preferredStyle: UIAlertControllerStyle.Alert)
+            print("Email or Passeword is not correct")
+            let alertBox = UIAlertController(title: "Alert!", message: "Email or Password is not Valid", preferredStyle: UIAlertControllerStyle.Alert)
             let dismissButton = UIAlertAction(title: "OK", style: UIAlertActionStyle.Cancel){ (libSelected) -> Void in }
             alertBox.addAction(dismissButton)
             self.presentViewController(alertBox, animated: true, completion: nil)

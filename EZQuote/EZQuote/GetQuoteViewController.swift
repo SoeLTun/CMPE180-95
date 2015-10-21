@@ -24,14 +24,14 @@ class GetQuoteViewController: UIViewController,UINavigationControllerDelegate, U
         let actionSheet = UIAlertController(title: "Select Method", message: "", preferredStyle: UIAlertControllerStyle.ActionSheet)
         
         let libraryBtn = UIAlertAction(title: "Select from photo library", style: UIAlertActionStyle.Default) { (libSelected) -> Void in
-            println("Libary Selected")
+            print("Libary Selected")
             selectImage.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
             self.presentViewController(selectImage, animated: true, completion: nil)
         }
         
         let cameraBtn = UIAlertAction (title: "Take Photo", style: UIAlertActionStyle.Default)
             {(libSelected) -> Void in
-                println("Camera Selected")
+                print("Camera Selected")
                 if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.Camera)
                 {
                     selectImage.sourceType = UIImagePickerControllerSourceType.Camera
@@ -39,12 +39,12 @@ class GetQuoteViewController: UIViewController,UINavigationControllerDelegate, U
                 }
                 else
                 {
-                    println("Camera Selected")
+                    print("Camera Selected")
                 }
         }
         
         let cancelBtn = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Cancel) { (cancelSelected) -> Void in
-            println("Cancel Selected")
+            print("Cancel Selected")
         }
         actionSheet.addAction(libraryBtn)
         actionSheet.addAction(cameraBtn)
